@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My Website</title>
+       <!-- CSS External-->
+      <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+      <!-- Header Content -->
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./assets/images/logo.webp" alt="logo" width="50" height="50"/>
+          </div>
+          <ul type="none" class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#messageUs">Message Us</a></li>
+          </ul>
+          <button class="burger" id="burgerBtn">☰</button>
+        </nav>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobileNav">
+          <button class="close-btn" id="closeBtn">✖</button>
+          <ul type="none" class="mobile-nav-list">
+            <li><a href="#home" onclick="handleMenu()">Home</a></li>
+            <li><a href="#profile" onclick="handleMenu()">Our Profile</a></li>
+            <li><a href="#portofolio" onclick="handleMenu()">Portofolio</a></li>
+            <li><a href="#messageUs" onclick="handleMenu()">Message Us</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <section id="home" class="section-profile">
+          <div class="profile-container">
+            <h2 id="welcomeTitle">Welcome to Website</h2>
+            <p>ini adalah website latihan pertama</p>
+           <!--  <p class="about">Dummy Tech Solutions adalah perusahaan IT yang fokus pada pengembangan software dan solusi digital. Kami membantu bisnis beradaptasi di era teknologi dengan layanan yang inovatif dan terpercaya.</p>
+            <p class="about">Visi & Misi</p>
+            <p class="about">Membangun solusi IT yang mudah, cepat, dan bermanfaat untuk mendukung pertumbuhan bisnis di era digital.</p> -->
+          </div>
+        </section>
+
+         <section id="profile" class="section-about">
+           <h2>About</h2>
+           <div class="about-container">
+            <p>
+              Kami adalah Dummy Solutions, perusahaan teknologi yang berfokus pada pengembangan perangkat lunak, solusi digital, dan layanan IT yang inovatif.
+              Dengan tim yang berpengalaman, kami membantu bisnis bertransformasi secara digital melalui produk dan layanan yang handal, aman, serta mudah digunakan.
+            </p>
+            <img src="./assets/images/about.webp" alt="about-image" class="about-image"/>
+          </div>
+        </section>
+
+        <section class="section-vision">
+          <h2>Vision & Mission</h2>
+          <div class="vision-container">
+            <img src="./assets/images/about2.webp" alt="about-image" class="about-image"/>
+            <div class="vision-description">
+              <h3>Vision</h3>
+              <p style="margin: 0 20px;">Menjadi perusahaan teknologi terdepan yang menghadirkan solusi digital inovatif untuk mendukung pertumbuhan bisnis dan meningkatkan kualitas hidup masyarakat.</p>
+              <h3>Mision</h3>
+              <ol type="1" style="margin: 0 20px; padding-left: 20px;">
+                <li>Mengembangkan perangkat lunak yang inovatif, handal, dan sesuai kebutuhan klien.</li>
+                <li>Memberikan layanan IT yang profesional, efisien, dan berorientasi pada solusi.</li>
+                <li>Membangun hubungan jangka panjang dengan pelanggan melalui kepercayaan dan kualitas layanan.</li>
+                <li>Mendukung transformasi digital dengan teknologi yang berkelanjutan dan ramah pengguna.</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section id="headquarter" class="section-headquarter">
+          <h2>Our Headquarter</h2>
+          <div class="headquarter-container">
+            <div class="headquarter-item">
+              <img src="./assets/images/kantor-jkt.webp" alt="headquarter-jakarta" class="headquarter-image"
+              width="200" height="200"
+              />
+              <p>Jakarta</p>
+            </div>
+            <div class="headquarter-item">
+              <img src="./assets/images/kantor-bdg.webp" alt="headquarter-bandung" class="headquarter-image"
+              width="200" height="200"
+              />
+              <p>Bandung</p>
+            </div>
+            <div class="headquarter-item">
+              <img src="./assets/images/kantor-jkt.webp" alt="headquarter-jakarta" class="headquarter-image"
+              width="200" height="200"
+              />
+              <p>Surabaya</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="portofolio" class="section-portofolio">
+          <h2>Our Portofolio</h2>
+          <div class="portofolio-container">
+            <div class="portofolio-item">
+              <img src="./assets/images/portfolio.webp" alt="image-portofolio1" class="portofolio-image"
+              width="250" height="130"
+              />
+              <p>Portofolio 1</p>
+            </div>
+            <div class="portofolio-item">
+              <img src="./assets/images/portfolio.webp" alt="image-portofolio2" class="portofolio-image"
+              width="250" height="130"
+              />
+              <p>Portofolio 2</p>
+            </div>
+            <div class="portofolio-item">
+              <img src="./assets/images/portfolio.webp" alt="image-portofolio3" class="portofolio-image"
+              width="250" height="130"
+              />
+              <p>Portofolio 3</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="messageUs" class="section-message">
+          <h2>Message Us</h2>
+          <div class="message-container">
+            <form action="#" method="post" class="message-form">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama" required>
+
+              <label for="date">Tanggal lahir</label>
+              <input type="date" id="date" name="date" required>
+
+              <label for="gender">Jenis Kelamin</label>
+              <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <span>Laki-laki</span>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <span>Perempuan</span>
+              </div>
+
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="4" placeholder="Pesan" required></textarea>
+
+              <button type="submit" id="submitBtn" disabled>Submit</button>
+            </form>
+
+            <div class="message-preview">
+              <div class="preview-body">
+                <p style="margin-bottom: 40px; font-weight: bold;">Current time : </p>
+                <p style="font-weight: bold;">Nama :</p>
+                <p style="font-weight: bold;">Tanggal Lahir :</p>
+                <p style="font-weight: bold;">Jenis Kelamin :</p>
+                <p style="font-weight: bold;">Pesan :</p>
+              </div>
+            </div>  
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer Content -->
+      <footer>
+          <p>&copy; 2025 Created By Yudha mp</p>
+      </footer>
+
+       <!-- JS External-->
+      <script src="./js/script.js"></script>
+  </body>
+</html>
