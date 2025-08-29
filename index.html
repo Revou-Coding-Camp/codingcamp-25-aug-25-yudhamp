@@ -17,7 +17,7 @@
           <ul type="none" class="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#profile">Our Profile</a></li>
-            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#messageUs">Message Us</a></li>
           </ul>
           <button class="burger" id="burgerBtn">☰</button>
@@ -29,7 +29,7 @@
           <ul type="none" class="mobile-nav-list">
             <li><a href="#home" onclick="handleMenu()">Home</a></li>
             <li><a href="#profile" onclick="handleMenu()">Our Profile</a></li>
-            <li><a href="#portofolio" onclick="handleMenu()">Portofolio</a></li>
+            <li><a href="#portfolio" onclick="handleMenu()">Portfolio</a></li>
             <li><a href="#messageUs" onclick="handleMenu()">Message Us</a></li>
           </ul>
         </div>
@@ -37,36 +37,34 @@
 
       <!-- Main Content -->
       <main>
-        <section id="home" class="section-profile">
-          <div class="profile-container">
-            <h2 id="welcomeTitle">Welcome to Website</h2>
-            <p>ini adalah website latihan pertama</p>
-           <!--  <p class="about">Dummy Tech Solutions adalah perusahaan IT yang fokus pada pengembangan software dan solusi digital. Kami membantu bisnis beradaptasi di era teknologi dengan layanan yang inovatif dan terpercaya.</p>
-            <p class="about">Visi & Misi</p>
-            <p class="about">Membangun solusi IT yang mudah, cepat, dan bermanfaat untuk mendukung pertumbuhan bisnis di era digital.</p> -->
+        <section id="home" class="section-home">
+          <div class="home-container">
+            <h2><span id="welcomeTitle" style="text-transform: capitalize;"></span> Welcome to our Website</h2>
+            <p>"Solusi Cerdas, Masa Depan Digital."</p>
           </div>
         </section>
 
-         <section id="profile" class="section-about">
+         <section id="profile" class="section-profile">
            <h2>About</h2>
-           <div class="about-container">
+           <div class="profile-container">
             <p>
               Kami adalah Dummy Solutions, perusahaan teknologi yang berfokus pada pengembangan perangkat lunak, solusi digital, dan layanan IT yang inovatif.
               Dengan tim yang berpengalaman, kami membantu bisnis bertransformasi secara digital melalui produk dan layanan yang handal, aman, serta mudah digunakan.
             </p>
-            <img src="./assets/images/about.webp" alt="about-image" class="about-image"/>
+            <img src="./assets/images/about.webp" alt="about-image" class="profile-image"/>
           </div>
         </section>
 
         <section class="section-vision">
           <h2>Vision & Mission</h2>
           <div class="vision-container">
-            <img src="./assets/images/about2.webp" alt="about-image" class="about-image"/>
+            <img src="./assets/images/about2.webp" alt="visi-misi-image" class="profile-image"/>
             <div class="vision-description">
               <h3>Vision</h3>
-              <p style="margin: 0 20px;">Menjadi perusahaan teknologi terdepan yang menghadirkan solusi digital inovatif untuk mendukung pertumbuhan bisnis dan meningkatkan kualitas hidup masyarakat.</p>
+              <p style="margin: 0 20px 20px 0;">Menjadi perusahaan teknologi terdepan yang menghadirkan solusi digital inovatif untuk mendukung pertumbuhan bisnis dan meningkatkan kualitas hidup masyarakat.</p>
+
               <h3>Mision</h3>
-              <ol type="1" style="margin: 0 20px; padding-left: 20px;">
+              <ol type="1" style="margin: 0 20px;">
                 <li>Mengembangkan perangkat lunak yang inovatif, handal, dan sesuai kebutuhan klien.</li>
                 <li>Memberikan layanan IT yang profesional, efisien, dan berorientasi pada solusi.</li>
                 <li>Membangun hubungan jangka panjang dengan pelanggan melalui kepercayaan dan kualitas layanan.</li>
@@ -92,7 +90,7 @@
               <p>Bandung</p>
             </div>
             <div class="headquarter-item">
-              <img src="./assets/images/kantor-jkt.webp" alt="headquarter-jakarta" class="headquarter-image"
+              <img src="./assets/images/kantor-sby.webp" alt="headquarter-surabaya" class="headquarter-image"
               width="200" height="200"
               />
               <p>Surabaya</p>
@@ -100,26 +98,26 @@
           </div>
         </section>
 
-        <section id="portofolio" class="section-portofolio">
-          <h2>Our Portofolio</h2>
-          <div class="portofolio-container">
-            <div class="portofolio-item">
-              <img src="./assets/images/portfolio.webp" alt="image-portofolio1" class="portofolio-image"
+        <section id="portfolio" class="section-portfolio">
+          <h2>Our Portfolio</h2>
+          <div class="portfolio-container">
+            <div class="portfolio-item">
+              <img src="./assets/images/portfolio.webp" alt="image-portfolio1" class="portfolio-image"
               width="250" height="130"
               />
-              <p>Portofolio 1</p>
+              <p>Portfolio 1</p>
             </div>
-            <div class="portofolio-item">
-              <img src="./assets/images/portfolio.webp" alt="image-portofolio2" class="portofolio-image"
+            <div class="portfolio-item">
+              <img src="./assets/images/portfolio2.webp" alt="image-portfolio2" class="portfolio-image"
               width="250" height="130"
               />
-              <p>Portofolio 2</p>
+              <p>Portfolio 2</p>
             </div>
-            <div class="portofolio-item">
-              <img src="./assets/images/portfolio.webp" alt="image-portofolio3" class="portofolio-image"
+            <div class="portfolio-item">
+              <img src="./assets/images/portfolio3.webp" alt="image-portfolio3" class="portfolio-image"
               width="250" height="130"
               />
-              <p>Portofolio 3</p>
+              <p>Portfolio 3</p>
             </div>
           </div>
         </section>
@@ -135,9 +133,9 @@
               <input type="date" id="date" name="date" required>
 
               <label for="gender">Jenis Kelamin</label>
-              <div>
+              <div class="gender-group">
                 <input type="radio" id="male" name="gender" value="male" required>
-                <span>Laki-laki</span>
+                <span style="margin-right: 20px;">Laki-laki</span>
                 <input type="radio" id="female" name="gender" value="female" required>
                 <span>Perempuan</span>
               </div>
@@ -145,7 +143,7 @@
               <label for="message">Pesan</label>
               <textarea id="message" name="message" rows="4" placeholder="Pesan" required></textarea>
 
-              <button type="submit" id="submitBtn" disabled>Submit</button>
+              <button type="submit" id="submitBtn">Submit</button>
             </form>
 
             <div class="message-preview">
